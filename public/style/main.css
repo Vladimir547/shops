@@ -1,0 +1,406 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #f4f6f8;
+}
+@font-face {
+    font-family: 'Harmonia Sans Pro Cyr';
+    src: url('HarmoniaSansProCyr-Bold.woff2') format('woff2'),
+        url('HarmoniaSansProCyr-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+    src: url('HarmoniaSansProCyr-SemiBd.woff2') format('woff2'),
+        url('HarmoniaSansProCyr-SemiBd.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harmonia Sans Pro Cyr';
+    src: url('HarmoniaSansProCyr-Italic.woff2') format('woff2'),
+        url('HarmoniaSansProCyr-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Harmonia Sans Pro Cyr';
+    src: url('HarmoniaSansProCyr-Black.woff2') format('woff2'),
+        url('HarmoniaSansProCyr-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harmonia Sans Pro Cyr';
+    src: url('HarmoniaSansProCyr-Regular.woff2') format('woff2'),
+        url('HarmoniaSansProCyr-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1{
+    font-family: 'Harmonia Sans Pro Cyr';
+    font-weight: 900;
+    font-style: normal;
+}
+p{
+    font-family: 'Harmonia Sans Pro Cyr';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color:#495662;
+}
+li{
+    font-family: 'Harmonia Sans Pro Cyr';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color:#495662;
+}
+h2{
+    font-family: 'Harmonia Sans Pro Cyr';
+    font-weight: 900;
+    font-style: normal;
+    color:#495662;
+}
+h3{
+    font-family: 'Harmonia Sans Pro Cyr';
+    font-weight: normal;
+    font-style: normal;
+    color:#495662;
+}
+h4{
+    font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+    font-weight: 600;
+    font-style: normal;
+    color:#495662;
+}
+h5 {
+    font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+    font-weight: 600;
+    font-style: normal;
+    color:#495662;
+}
+a{
+    font-family: 'Harmonia Sans Pro Cyr';
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color:#495662;
+}
+span{
+    color:#ff5912;
+}
+.header{
+    padding-top:25px;
+    background: #ffffff;
+}
+.header__seti{
+    text-align:right;
+}
+.header__contact{
+    padding-left: 0px;
+
+}
+.header__contact p{
+    display:inline;
+    padding: 0px 15px 0px 0px;
+}
+.header__seti a{
+    padding:5px;
+}
+.header__menu{
+    padding: 65px 0px 65px 15px;
+}
+.logo{
+    display: inline-block;
+}
+.navigation{
+    display: inline-block;
+}
+.menu li{
+    display:inline-block;
+    list-style: none;
+    padding:0px 22px;
+}
+.menu li a{
+    color:#424d57;
+}
+.menu li a:hover{
+    color:#ff5912;
+    border-bottom: 3px solid #ff5912;
+    text-decoration: none;
+}
+.menu__icon{
+    float: right;
+    display:inline-block;
+}
+.menu__icon a{
+    padding:0px 15px; 
+}
+.advantages{
+    background: url(../img/Featured.png);
+}
+.adv__info{
+    padding:170px 0px;
+}
+.controller{
+    display:inline-block;
+    vertical-align: middle;
+}
+.adv__product{
+    display:inline-block;
+    vertical-align: middle;
+}
+.adv__product h1{
+    padding-left:90px;
+    color:#ff5912;
+    font-size:52px;
+}
+.adv__product h5{
+    padding: 36px 0px 0px 90px;
+    font-size:18px;
+    color:#3c4751;
+
+}
+.adv__product p{
+    padding:20px 0px 0px 90px;
+    font-size: 16px;
+    color:#495662;
+}
+.adv__product h4{
+    padding: 70px 0px 0px 90px;
+    color:#34404b;
+    font-size: 20px;
+}
+.adv__product h4 img{
+    padding: 0px 30px 0px 35px;
+}
+.adv__product h4 a{
+    color:#ff5912;
+}
+.adv__product h4 a:hover{
+    color:white;
+    text-decoration: none;
+}
+.headline_price{
+    text-align: center;
+    padding:120px 0px 80px 0px;
+}
+.headline_price h2{
+    text-transform: uppercase;
+    font-size: 45px;
+}
+.shop__window{
+    padding:20px 10px;
+    background: white;
+    text-align:center;
+    text-transform: capitalize;
+    height:365px ;
+}
+.shop__window h4{
+    padding:20px;
+}
+.shop__window p{
+    padding-top:35px;
+}
+.shop__window a:hover{
+    border-bottom: 3px solid #ff5912;
+    text-decoration:none;
+}
+.collor{
+    padding:20px;
+}
+.red{
+    background: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 23px;
+    display: inline-block;
+}
+.black{
+    background: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 23px;
+    display: inline-block;
+}
+.blue{
+    background: blue;
+    width: 15px;
+    height: 15px;
+    border-radius: 23px;
+    display: inline-block;
+}
+.green{
+    background: green;
+    width: 15px;
+    height: 15px;
+    border-radius: 23px;
+    display: inline-block;
+}
+.shop__icons a{
+    padding: 0px 10px;
+}
+.three__points{
+    text-align: center;
+    background: white;
+    margin-top:80px;
+    padding-bottom: 20px;
+}
+.three__points h2{
+    color:#ff5912;
+    font-size:50px;
+}
+.hot__deal{
+    margin-top:120px;
+}
+.hot__deal_left{
+    background:white;
+    padding: 10px 60px;
+}
+.discount__img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.discount__text{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left:20px;
+}
+.discount__text h3{
+    font-size: 22px;
+}
+.discount__text p{
+    font-size: 12px;
+}
+.discount__price{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left:20px;
+}
+.discount__price a{
+    font-size:32px;
+    padding-left: 10px;
+}
+.hot__deal_right{
+    background:white;
+    padding: 15px 60px;
+    text-align: center;
+}
+.sales__headline{
+    text-align: center;
+    margin-top:110px;
+    padding-bottom: 85px;
+}
+.sales__headline h2{
+    text-transform: uppercase;
+}
+.sales__headline p{
+    color:#495662;
+}
+.sales__product{
+    background:white;
+    padding: 30px 0px;
+}
+.sales__img{
+    display:inline-block;
+    vertical-align:middle;
+}
+.sales__rate{
+    display:inline-block;
+    vertical-align:middle;
+    padding-left:25px;
+}
+.sales__rate h4{
+    text-transform: capitalize;
+    padding-bottom:35px;
+}
+.sales__rate a{
+    margin-left: 35px;
+}
+.sales__rate a:hover{
+    border-bottom: 3px solid #ff5912;
+    text-decoration:none;
+}@media (max-width: 1200px){
+    .discount__price a{
+        font-size:25px;
+        padding-left: 7px;
+    }
+@media (max-width: 992px){
+    p{
+        font-size: 14px;
+    }
+    li{
+        font-size: 14px;
+    }
+    .adv__product h1{
+        font-size: 42px;
+    }
+    .adv__product h5{
+        font-style: 16px;
+    }
+    .adv__product p{
+        font-size: 14px;
+    }
+    .adv__product h4{
+        font-size: 18px;
+    }
+    .three__points h2{
+        font-size: 40px;
+    }
+    .headline_price h2{
+        font-size: 35px;
+    }
+    .discount__text h3{
+        font-size: 19px;
+    }
+    .discount__text p{
+        font-size: 11px;
+    }
+    .discount__price a{
+        font-size:25px;
+        padding-left: 7px;
+    }
+}
+@media (max-width: 768px){
+    p{
+        font-size: 12px;
+    }
+    li{
+        font-size: 12px;
+    }
+    .adv__product h1{
+        font-size: 35px;
+    }
+    .adv__product h5{
+        font-style: 14px;
+    }
+    .adv__product p{
+        font-size: 12px;
+    }
+    .adv__product h4{
+        font-size: 16px;
+    }
+    .three__points h2{
+        font-size: 33px;
+    }
+    .headline_price h2{
+        font-size: 30px;
+    }
+    .discount__text h3{
+        font-size: 17px;
+    }
+    .discount__text p{
+        font-size: 10px;
+    }
+    .discount__price a{
+        font-size:23px;
+        padding-left: 7px;
+    }
+}
