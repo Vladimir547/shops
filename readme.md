@@ -11,10 +11,10 @@
 Проект создан в учебных целях. С использованием фреимворка Laravel
 
 ## информация по установке
--cd domains
--git clone https://github.com/Vladimir547/shops.git
-cd shops
--создать бд с именем  baza
--из файла .env.example создать .env и подключится к бд
--composer self-update
-composer install
+- cd domains
+- git clone https://github.com/Vladimir547/shops.git
+- cd shops
+- создать бд с именем  baza
+- из файла .env.example создать .env и подключится к бд
+- composer self-update
+- composer install
