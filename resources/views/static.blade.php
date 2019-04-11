@@ -5,8 +5,8 @@
         <div class='container'>
             <div class='row'>
                 <div class='headline_price'>
-                    <h2>{{$url}}</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <h2>{{$obj->name}}</h2>
+						{!!$obj->body!!}
                 </div>
                 
             </div>

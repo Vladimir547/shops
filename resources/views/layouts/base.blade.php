@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type = "text/css" href="./style/main.css">
+    <link rel="stylesheet" type = "text/css" href="{{asset('style/main.css')}}">
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
@@ -32,9 +32,9 @@
                             <ul class='menu__item'>
                                 <li><a href='/'>Home</a></li>
                                 <li><a href=' '>Products</a></li>
-                                <li><a href="{{asset('hot')}}">Hot Deals</a></li>
-                                <li><a href="{{asset('about')}}">About</a></li>
-                                <li><a href="{{asset('contact')}}">Contact</a></li>
+								@foreach($v_objs as $one)
+								 <li><a href="{{asset($one->url)}}">{{$one->name}}</a></li>
+								@endforeach
 								 @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>

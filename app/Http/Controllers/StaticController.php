@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Maintext;
 
 class StaticController extends Controller
 {
    public function getIndex($url=null){
-	   return view('static',compact('url'));
+	   $obj= Maintext::where('url',$url)->first();
+	   return view('static',compact('obj'));
    }
 }
